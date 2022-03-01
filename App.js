@@ -3,54 +3,48 @@ import { Text, View, ViewPagerAndroidBase } from 'react-native';
 import { SafeAreaView, StyleSheet, TextInput } from "react-native";
 import { Navbar, Container, Nav, Button } from 'react-bootstrap';
 
-/*functionMyComp() {
-  return (
-  <div>
-    <h2>Mon premier composant</h2>
-  </div>    
-  );
-}*/
+
 const UselessTextInput = () => {
-  //const [text, onChangeText] = React.useState("Useless Text");
-  const [poid, poid] = React.useState(null);
-  const [taille, taille] = React.useState(null);
-/*
+
+  const [poid, onChangeNumber] = React.useState(null);
+  const [taille, onChangeNumber] = React.useState(null);
+
   function surpoids() {
     return (
       <div>
         <h2>Vous êtes en surpoids</h2>
       </div>    
     );
-  }*//*
+  }
   function CalculDeIcm(poid, taille){
-    let icm = 0
-    if (poid === null || taille === null){
-      icm = poid/taille
-    }
+    // let icm = 0
 
-    if(icm >= 20) return "Vous êtes en surpoids"
-  }*/
+    icm = poid/taille
+
+
+    if(icm > 20) return surpoids
+  }
   return (
     <SafeAreaView>
 
       <Text>Calcul automatique de votre ICM</Text>
       <TextInput
         style={styles.input}
-        onChangeText={poid}
-        value={number}
+        onChangeText={onChangeNumber}
+        value={poid}
         placeholder="Veuillez rentrer votre poix en kg"
         keyboardType="numeric"
       />
       <TextInput
         style={styles.input}
-        onChangeText={taille}
-        value={number2}
+        onChangeText={onChangeNumber}
+        value={taille}
         placeholder="veuillez rentrer votre tailles en m²"
         keyboardType="numeric"
-      />{/*
+      />{
       <Button variant="primary" onClick={CalculDeIcm}>
         Calculer
-      </Button>*/}
+      </Button>}
     </SafeAreaView>
   );
 };
@@ -65,4 +59,6 @@ const styles = StyleSheet.create({
 });
 
 export default UselessTextInput;
+
+
 
