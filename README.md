@@ -1,6 +1,6 @@
 # evaluation-mobile-1
 
-évaluation dans la laquelle nous cherchons à calculer l'ICM d'une personne
+évaluation dans la laquelle nous cherchons à calculer l'IMC d'une personne
 
 ## Installation
 
