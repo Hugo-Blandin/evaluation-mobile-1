@@ -6,11 +6,11 @@
 
 Dans un terminal lancer la commande :
 
-`git clone https://github.com/plarrat/EIT-3eme-App-Revision.git`
+`git clone https://github.com/Hugo-Blandin/evaluation-mobile-1.git`
 
 Se positionner dans le répertoire nouvellement créé :
 
-`cd EIT-3eme-App-Revision`
+`cd evaluation-mobile-1`
 
 Télécharger les dépendances :
 
